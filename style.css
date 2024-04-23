@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@700&family=Playfair+Display:wght@800&family=Montserrat:wght@800&family=Raleway:wght@800&display=swap');
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{ 
+    font-size:62.5%;
+    
+    
+}
+h1{
+    font-size: 4.8rem;
+    color:#3a7400;
+    font-weight: 800;
+    width:18ch;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+body{
+   min-height:100vh;
+   max-width:100vw;
+   background-color: #000000;
+}
+.top-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:85%;
+}
+.header-section{
+    background-color: #000000;
+    padding:3rem 0rem 12rem 0rem;
+    display:flex;
+    flex-direction: column;
+    gap:7rem;
+    max-width:100%;
+    align-items: center;
+   
+}
+.header-links{
+    display:flex;
+    gap:5rem;
+}
+.header-links > a, p{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff; 
+}
+
+.header-logo{
+    font-size: 2.4rem;
+    color:#80ff00;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.header-image{
+   width:45%;
+   height:auto;
+   flex-shrink: 0;
+}
+
+.bottom-header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:85%;
+}
+
+img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+p{
+    width:39ch;
+    font-family: sans-serif, 'Roboto';
+}
+
+button{
+    background-color: #68cf00;
+    color: #F9FAF8;
+    font-weight: 800;
+    padding:0.6rem 1.4rem;
+    width:10rem;
+    border-radius: 6px;
+    border-style: none;
+    font-family: sans-serif;
+}
+
+.introduction-container > button{
+    font-size:1.6rem;
+    padding: 0.6rem 1.2rem;
+}
+
+.introduction-container{
+    display:flex;
+    width:50%;
+    flex-direction: column;
+    gap:3rem;
+}
+
+h2{
+    font-size: 3.6rem;
+    font-weight: 100; 
+    font-family: 'Raleway', sans-serif;
+    color:#1F2937
+}
+
+.picture-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:4rem 0rem 8rem 0rem;
+    gap: 4.6rem;
+    max-width:100%;
+}
+
+.pictures-container{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+
+.picture{
+    display:flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:20%;
+    gap:3.1rem;
+}
+
+.picture-image{
+  width: 12.8rem;
+  height:12.8rem;
+}
+
+.picture-image > img{
+    height:100%;
+    width:100%;
+    border-radius: 6px;
+    border:4px solid #3882F6;
+}
+
+.picture > p {
+    width:80%;
+    font-size:2rem;
+    color:rgb(114, 113, 113);
+}
+.quote-section{
+    background-color:#E5E7EB;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:8rem;
+}
+.quote{
+    font-size: 3.6rem;
+    font-style:italic;
+    color: #38393a;
+    font-weight: lighter;
+}
+.author-quote{
+    font-weight: 800;
+    font-size: 2.2rem;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    align-self: flex-end;
+    width:17.5ch;
+
+}
+
+.quote-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+.sign-up-section{
+    display:flex;
+    padding:6rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sign-up-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding:3.4rem 2.2rem;
+    border-radius: 10px;
+    width:80%;
+    max-width:85rem;
+}
+
+.sign-up{
+    padding:0.4rem 1rem;
+    font-size:1.6rem;
+    border: 1.5px solid white;
+}
+.left-sign-up{
+    display:flex;
+    flex-direction: column;
+    gap:1.4rem;
+
+}
+h3{
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+    font-size:2rem;
+}
+
+
+.footer{
+   background-color: #1F2937;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding:3.5rem 0rem;
+}
+
+.footer > p{
+    width:initial
+}
+
+@media only screen and (max-width: 770px) {
+   .sign-up-container{
+       width:100%;
+   }
+   .header-section{
+       padding-bottom:5rem;
+   }
+   .header-section{
+       gap:3rem;
+   }
+   .quote{
+       width:100%;
+       font-size:3rem;
+   }
+   .quote-container{
+       gap:1rem;
+   }
+   .quote-section{
+       padding:8rem 4rem;
+
+   }
+
+}
+@media only screen and (max-width: 590px) {
+   .header-logo{
+       font-size:1.5rem;
+
+   } 
+   .header-links{
+       gap:2rem;
+   }
+   .footer > p{
+       width:22ch;
+   }
+   .left-sign-up > p{
+    width:22ch;
+    font-size:1.4rem;
+}
+   h1{
+       font-size:3rem;
+   }
+   .quote{
+       font-size:2rem;
+   }
+   .author-quote{
+       font-size:1.6rem;
+   }
+
+   p{
+       width:30ch;
+   }
+   .header-image{
+       width:100%;
+   }
+   .introduction-container{
+     gap:2rem;
+   }
+
+   .header-image{
+       margin-top:2rem;
+   }
+   
+   .bottom-header{
+       flex-direction: column;
+       gap:1.5rem;
+       align-items: flex-start;
+   }
+
+   .header-links > a{
+       font-size:1.3rem;
+   }
+   .pictures-container{
+       flex-flow: row wrap;
+       row-gap: 3rem;
+
+   }
+   h3{
+       font-size:1.9rem;
+   }
+   .picture> p{
+      font-size:1.4rem;
+   }
+   .picture-section > h2{
+     text-align: center;
+
+   }
+   .sign-up-container{
+       width:100%;
+   }
+   .sign-up-section{
+    padding:6rem 1rem;
+   }
+   .picture{
+       width:50%;
+   }
+
+   .introduction-container > p{
+       width:34ch;
+   }
+   
+}
+.header-video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-video video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
